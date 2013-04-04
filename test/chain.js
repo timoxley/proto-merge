@@ -1,8 +1,9 @@
 describe("chain", function() {
   "use strict"
+  var merge = typeof window !== 'undefined' ? require('proto-merge') : require('../')
+  var assert = typeof window !== 'undefined' ? require('timoxley-assert') : require('assert')
+  var chain = merge.chain
 
-  var chain = require('proto-merge').chain
-  var assert = require('timoxley-assert')
 
   var parent = {name: "Mom"}
   var child = {name: "Bob"}

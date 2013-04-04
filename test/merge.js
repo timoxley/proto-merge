@@ -1,10 +1,10 @@
 describe("proto-merge", function() {
   "use strict"
 
-  var merge = require('proto-merge')
-  var assert = require('timoxley-assert')
+  var merge = typeof window !== 'undefined' ? require('proto-merge') : require('../')
+  var assert = typeof window !== 'undefined' ? require('timoxley-assert') : require('assert')
 
-  var project = {
+  var project = merge({
     name: "Main Project",
     version: '0.0.1',
     sub_project: {
@@ -13,8 +13,7 @@ describe("proto-merge", function() {
     forks: [
       {version: '0.0.3'}
     ]
-  }
-  merge(project)
+  })
 
   it('sets prototypes correctly', function() {
     assert.strictEqual(Object.getPrototypeOf(project.sub_project), project)

@@ -9,7 +9,8 @@
  */
 
 module.exports = function protoMerge(obj) {
-  return findChains(obj).map(chainPrototypes)
+  findChains(obj).map(chainPrototypes)
+  return obj
 }
 
 module.exports.chain = chainPrototypes

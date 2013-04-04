@@ -1,8 +1,9 @@
 describe("find chain", function() {
   "use strict"
 
-  var findChains = require('proto-merge').findChains
-  var assert = require('timoxley-assert')
+  var merge = typeof window !== 'undefined' ? require('proto-merge') : require('../')
+  var assert = typeof window !== 'undefined' ? require('timoxley-assert') : require('assert')
+  var findChains = merge.findChains
 
   it('finds single level, single leaf chains correctly', function() {
     var parent = {

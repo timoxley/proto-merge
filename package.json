@@ -1,0 +1,26 @@
+{
+  "name": "proto-merge",
+  "version": "0.0.1",
+  "description": "Create an Object prototype chain based on hierarchy.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/chain.js test/find-chains.js test/merge.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:timoxley/proto-merge.git"
+  },
+  "keywords": [
+    "prototype"
+  ],
+  "author": "Tim Oxley",
+  "license": "MIT",
+  "gitHead": "7da71dd5ff4b3e8d0324350d34d6befc2d893868",
+  "readmeFilename": "Readme.md",
+  "devDependencies": {
+    "mocha": "~1.9.0"
+  }
+}
