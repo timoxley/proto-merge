@@ -1,0 +1,16 @@
+{
+  "name": "proto-merge",
+  "repo": "timoxley/proto-merge",
+  "description": "Experimental. Create Object Proto chain based on hierarchy.",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {
+  },
+  "development": {
+    "timoxley/assert": "*"
+  },
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}
