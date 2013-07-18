@@ -2,11 +2,24 @@
 
 [![Build Status](https://travis-ci.org/timoxley/proto-merge.png?branch=master)](https://travis-ci.org/timoxley/proto-merge)
 
-Experimental. Define a prototype chain with using vanilla nested objects.
+Experimental. Define complex prototype chains with vanilla nested objects.
 
 ## Installation
 
+#### node + browserify
+    $ npm install proto-merge
+
+#### component
     $ component install timoxley/proto-merge
+
+## Why?
+
+Useful for APIs that need a little magic – inherited
+behaviour/properties are desirable yet the overhead
+of verbose prototype definitions would ruin the
+elegance. 
+
+As with all magic, use responsibly.
 
 ## Example
 
@@ -45,10 +58,6 @@ console.log(project.forks[0].version) // => '0.0.3'
 project.sub_project.sub_project.sub_project.name // => 'Sub Project'
 
 ```
-
-## Why?
-
-I don't know yet. It seemed cool.
 
 ## License
 
