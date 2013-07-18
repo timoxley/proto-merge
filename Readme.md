@@ -1,8 +1,8 @@
 # proto-merge
 
-  Experimental. Define a prototype chain with using vanilla nested objects.
-
 [![Build Status](https://travis-ci.org/timoxley/proto-merge.png?branch=master)](https://travis-ci.org/timoxley/proto-merge)
+
+Experimental. Define a prototype chain with using vanilla nested objects.
 
 ## Installation
 
