@@ -34,7 +34,7 @@ var project = merge({
   },
   forks: [
     {version: 0.0.2},
-    {name: 'A fork!}
+    {name: 'A fork!'}
   ]
 })
 
