@@ -21,6 +21,6 @@
   "gitHead": "7da71dd5ff4b3e8d0324350d34d6befc2d893868",
   "readmeFilename": "Readme.md",
   "devDependencies": {
-    "mocha": "~1.9.0"
+    "mocha": "~2.3.3"
   }
 }
