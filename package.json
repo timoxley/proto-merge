@@ -1,6 +1,6 @@
 {
   "name": "proto-merge",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Create an Object prototype chain based on hierarchy.",
   "main": "index.js",
   "directories": {
