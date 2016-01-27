@@ -26,20 +26,25 @@ a minimum.
 ```js
 var merge = require('proto-merge')
 
+// all objects inherit from their 'parent' objects
 var project = merge({
-  name: "Main Project",
-  version: 0.0.1,
+  // top level object becomes the 'parent' for any objects defined inside it
+  name: 'Main Project',
+  version: '0.0.1',
   sub_project: {
-    name: "Sub Project"
+    // this will inherit from the parent
+    name: 'Sub Project'
   },
   forks: [
-    {version: 0.0.2},
+    // each will inherit from the parent
+    {version: '0.0.2'},
     {name: 'A fork!'}
   ]
 })
 
 // property access works as expected:
 console.log(project.version) // => '0.0.1'
+
 
 // sub_project inherits properties from from its 'parent'
 console.log(project.sub_project.version) // => '0.0.1'
