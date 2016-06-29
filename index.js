@@ -41,7 +41,7 @@ function findChains(obj, chain, chains) {
   var children = getChildObjects(obj).concat(getChildArrayObjectChildren(obj))
   if (!children.length) {
     chains.push(chain)
-    return
+    return chains
   }
   children.forEach(function(child) {
     return findChains(child, chain.slice(), chains)

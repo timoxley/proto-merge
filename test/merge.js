@@ -32,4 +32,13 @@ describe("proto-merge", function() {
     assert.equal(project.forks[0].version, '0.0.3')
     assert.equal(project.sub_project.sub_project.sub_project.sub_project.name, 'Sub Project')
   })
+
+  it('works with no child objects', function() {
+    var project = merge({
+      name: "Main Project",
+      version: '0.0.1'
+    })
+    assert.equal(project.name, 'Main Project')
+    assert.equal(project.version, '0.0.1')
+  })
 })
